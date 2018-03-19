@@ -43,6 +43,18 @@
       background:black;
       position: absolute;
       top:50%;
+
+      /*transform origin places the edge of the hand right in the center of clock*/
+      transform-origin: 100%; 
+      /*rotates the hand at 90 degrees*/
+      transform: rotate(90deg); 
+
+      /*transition: all 0.05s; all transitions last .5s*/
+
+      /*makes jumpy effect on hand*/
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+
+
     }
 
   </style>
